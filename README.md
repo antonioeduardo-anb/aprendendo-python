@@ -1,12 +1,14 @@
-# testandoo
+# Ambiente de Execução Python
 
 ## criar imagem
-``` bash
+
+```bash
 podman build -t python-estudo .
-``` 
+```
 
 ## montar ambiente de estudos
-``` bash
+
+```bash
 podman run --rm -it \
     -v "$PWD:/estudo:Z" \
     python-estudo
